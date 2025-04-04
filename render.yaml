@@ -1,5 +1,5 @@
 services:
-  - type: web
+  - type: static
     name: patent-ai-assistant
     env: python
     plan: free
