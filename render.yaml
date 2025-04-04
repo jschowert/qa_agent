@@ -3,7 +3,7 @@ services:
     name: patent-ai-assistant
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: streamlit run streamlit_app.py
+    startCommand: streamlit run streamlit_app.py --server.port $PORT --server.address 0.0.0.0
     envVars:
       - key: ANTHROPIC_API_KEY
         sync: false
