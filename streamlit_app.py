@@ -1,6 +1,6 @@
 import streamlit as st
-from for_studio import graph
-from utils.state import AgentState
+from langgraph_example.my_agent.for_studio import graph
+from langgraph_example.my_agent.utils.state import AgentState
 from langchain_core.messages import HumanMessage
 
 def main():
@@ -129,4 +129,4 @@ def main():
                 st.session_state.messages.append({"role": "assistant", "content": result})
 
 if __name__ == "__main__":
-    main() 
+    main()
