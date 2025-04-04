@@ -6,7 +6,7 @@ services:
     region: singapore
     buildCommand: |
       pip install -r requirements.txt
-      pip install gunicorn streamlit
+      pip install streamlit
     startCommand: |
       streamlit run streamlit_app.py --server.port $PORT --server.address 0.0.0.0
     envVars:
@@ -18,3 +18,5 @@ services:
         sync: false
       - key: PYTHONPATH
         value: /opt/render/project/src
+      - key: STREAMLIT_SERVER_PORT
+        value: $PORT
