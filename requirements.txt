@@ -49,7 +49,6 @@ marshmallow==3.26.1
 mecab==0.996.11
 msgpack==1.1.0
 multidict==6.2.0
--e git+https://github.com/langchain-ai/langgraph-example.git@ecf328da62e3efc3270c16fb83e1f6725dd107d1#egg=my_agent
 mypy-extensions==1.0.0
 narwhals==1.32.0
 numpy==1.26.2
